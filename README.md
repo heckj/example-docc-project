@@ -37,10 +37,9 @@ swift package generate-documentation
 # --checkout-path /Users/heckj/src/example-docc-project \
 # --source-service github --source-service-base-url heckj/example-docc-project \
 
-
 ## Publishing Documentation
 
-Add your package to Swift Package Index to make it discoverable, and to host the documentation content.
+Add your package to [Swift Package Index](https://swiftpackageindex.com) to host the documentation and make it discoverable.
 You can also build the documentation and host it on GitHub Pages or any other static hosting service.
 This example project is set up to host the documentation on GitHub Pages, using the following command:
 
@@ -52,3 +51,11 @@ swift package --disable-sandbox generate-documentation \
 --output-path docs
 ```
 
+The GitHub pages configuration:
+
+![A screenshot of the GitHub pages configuration. Deploy from source, branch `main`, deploying from the directory `docs`.](img/github-pages-config.png)
+
+The resulting pages are hosted at [heckj.github.io/example-docc-project](https://heckj.github.io/example-docc-project).
+
+> Warning: DocC doesn't currently generate a link from the base directory to its content, so accessing the above URL 
+> results in "Page not found", even though the content IS hosted. Link to the content directly, in this case: [https://heckj.github.io/example-docc-project/documentation/exampledocs/](https://heckj.github.io/example-docc-project/documentation/exampledocs/).
