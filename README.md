@@ -32,10 +32,8 @@ swift package generate-documentation
 - Use `--analyze --warnings-as-errors` to check on the status of the documentation content, which help identify broken links or missing content.
 
 - Use `--checkout-path`, `--source-service`, and `--source-service-base-url` to specify the source code service and base URL for the documentation to provide a link in the documentation content to the repository. 
-  For this example, the options would be `--source-service github --source-service-base-url heckj/example-docc-project
-
-# --checkout-path /Users/heckj/src/example-docc-project \
-# --source-service github --source-service-base-url heckj/example-docc-project \
+  For this example, the options would be `--source-service github --source-service-base-url heckj/example-docc-project`
+  There may be an issue with using `--checkout-path` and related options with Swift 6.2 - [still debugging that](https://github.com/swiftlang/swift-docc/issues/1248).
 
 ## Publishing Documentation
 
@@ -57,5 +55,5 @@ The GitHub pages configuration:
 
 The resulting pages are hosted at [heckj.github.io/example-docc-project](https://heckj.github.io/example-docc-project).
 
-> Warning: DocC doesn't currently generate a link from the base directory to its content, so accessing the above URL 
+> ⚠️ Warning: DocC doesn't currently generate a link from the base directory to its content, so accessing the above URL 
 > results in "Page not found", even though the content IS hosted. Link to the content directly, in this case: [https://heckj.github.io/example-docc-project/documentation/exampledocs/](https://heckj.github.io/example-docc-project/documentation/exampledocs/).
