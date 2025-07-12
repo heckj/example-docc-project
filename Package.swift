@@ -14,6 +14,9 @@ let package = Package(
             // The excludes are cease warnings for the other files in there that it can't figure out
             // what to do with - README.md and LICENSE.
             path: ".",
+            // The downside of this structure, especially with hosting other content alongside the DocC catalog,
+            // is that SwiftPM complains about any rendered content, for example all the individual files
+            // you might host for GitHub pages publishing.
             exclude: ["README.md", "LICENSE"],
         ),
     ]
