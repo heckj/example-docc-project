@@ -45,6 +45,7 @@ You can also build the documentation and host it on GitHub Pages or any other st
 This example project is set up to host the documentation on GitHub Pages, using the following command:
 
 ```bash
+export DOCC_JSON_PRETTYPRINT=YES # makes the output JSON easier to read, and diff
 swift package --disable-sandbox generate-documentation \
 --hosting-base-path example-docc-project \
 --analyze --warnings-as-errors \

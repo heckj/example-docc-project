@@ -1,1 +1,9 @@
-{"schemaVersion":{"major":0,"patch":0,"minor":1},"bundleID":"ExampleDocs","bundleDisplayName":"ExampleDocs"}
+{
+  "bundleDisplayName" : "ExampleDocs",
+  "bundleID" : "ExampleDocs",
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 1,
+    "patch" : 0
+  }
+}

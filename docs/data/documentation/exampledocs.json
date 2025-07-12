@@ -1,1 +1,91 @@
-{"schemaVersion":{"major":0,"patch":0,"minor":3},"kind":"symbol","hierarchy":{"paths":[[]]},"metadata":{"role":"collection","roleHeading":"Framework","modules":[{"name":"ExampleDocs"}],"symbolKind":"module","title":"ExampleDocs","externalID":"ExampleDocs"},"sections":[],"primaryContentSections":[{"content":[{"anchor":"Overview","level":2,"text":"Overview","type":"heading"},{"inlineContent":[{"text":"A brief overview…","type":"text"}],"type":"paragraph"}],"kind":"content"}],"abstract":[{"text":"Summary for example docs","type":"text"}],"variants":[{"paths":["\/documentation\/exampledocs"],"traits":[{"interfaceLanguage":"swift"}]}],"identifier":{"url":"doc:\/\/ExampleDocs\/documentation\/ExampleDocs","interfaceLanguage":"swift"},"references":{"doc://ExampleDocs/documentation/ExampleDocs":{"title":"ExampleDocs","url":"\/documentation\/exampledocs","type":"topic","identifier":"doc:\/\/ExampleDocs\/documentation\/ExampleDocs","abstract":[{"text":"Summary for example docs","type":"text"}],"role":"collection","kind":"symbol"}}}
+{
+  "abstract" : [
+    {
+      "text" : "Summary for example docs",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/ExampleDocs\/documentation\/ExampleDocs"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "ExampleDocs",
+    "modules" : [
+      {
+        "name" : "ExampleDocs"
+      }
+    ],
+    "role" : "collection",
+    "roleHeading" : "Framework",
+    "symbolKind" : "module",
+    "title" : "ExampleDocs"
+  },
+  "primaryContentSections" : [
+    {
+      "content" : [
+        {
+          "anchor" : "Overview",
+          "level" : 2,
+          "text" : "Overview",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "A brief overview…",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/exampledocs"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://ExampleDocs/documentation/ExampleDocs": {
+  "abstract" : [
+    {
+      "text" : "Summary for example docs",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/ExampleDocs\/documentation\/ExampleDocs",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "ExampleDocs",
+  "type" : "topic",
+  "url" : "\/documentation\/exampledocs"
+}
+}
+}
