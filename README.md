@@ -7,6 +7,18 @@ aside from Snippets, doesn't include any libraries, executables, or related API 
 
 You can edit and build the documentation content using Xcode, or from the command line.
 
+## Package Structure
+
+This repository is structured to put the Documentation catalog at the root of the repository, which comes with some tradeoffs.
+The `Package.swift` file is set up with a target that looks for sources in this directory, which means
+that the swift compiler warns about files it doesn't know about.
+A couple of files (`LICENSE` and `README.md`) are explicitly excluded in the [package manifest](./Package.swift), but the `/docs` directory and its files - aren't included in that set.
+The side effect of this is that everything builds normally, but you'll see warnings from the Swift compiler when invoking the documentation preview or builds.
+
+The default structure for a Swift package would place the documentation catalog (the directory `Documentation.docc`) in the sources location based on the target.
+In this example, that target is named `ExampleDocs` - so the default location is `Sources/ExampleDocs`.
+The default structure is better for general usage - for example when you're provided API reference for a library or executable, or want to provide more than one catalog within the same repository.
+
 ## Building Documentation
 
 To build and preview the documentation from the command line:
