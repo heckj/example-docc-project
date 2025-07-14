@@ -5,6 +5,13 @@
   "interfaceLanguages" : {
     "swift" : [
       {
+        "children" : [
+          {
+            "path" : "\/documentation\/exampledocs\/examplearticle",
+            "title" : "ExampleArticle",
+            "type" : "article"
+          }
+        ],
         "path" : "\/documentation\/exampledocs",
         "title" : "ExampleDocs",
         "type" : "module"

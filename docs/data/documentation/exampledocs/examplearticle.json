@@ -1,33 +1,31 @@
 {
   "abstract" : [
     {
-      "text" : "Summary for example docs",
+      "text" : "An example article to display.",
       "type" : "text"
     }
   ],
   "hierarchy" : {
     "paths" : [
       [
-
+        "doc:\/\/ExampleDocs\/documentation\/ExampleDocs"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "swift",
-    "url" : "doc:\/\/ExampleDocs\/documentation\/ExampleDocs"
+    "url" : "doc:\/\/ExampleDocs\/documentation\/ExampleDocs\/ExampleArticle"
   },
-  "kind" : "symbol",
+  "kind" : "article",
   "metadata" : {
-    "externalID" : "ExampleDocs",
     "modules" : [
       {
         "name" : "ExampleDocs"
       }
     ],
-    "role" : "collection",
-    "roleHeading" : "Framework",
-    "symbolKind" : "module",
-    "title" : "ExampleDocs"
+    "role" : "article",
+    "roleHeading" : "Article",
+    "title" : "ExampleArticle"
   },
   "primaryContentSections" : [
     {
@@ -41,7 +39,31 @@
         {
           "inlineContent" : [
             {
-              "text" : "A brief overview…",
+              "text" : "Description of what the article is about - the problem being solved, etc.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "func main() {",
+            "    print(\"hello world\")",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "anchor" : "Section-header",
+          "level" : 3,
+          "text" : "Section header",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Details, step by step, or explanations grouped by section headers.",
               "type" : "text"
             }
           ],
@@ -59,18 +81,10 @@
   "sections" : [
 
   ],
-  "topicSections" : [
-    {
-      "anchor" : "Topics",
-      "identifiers" : [
-        "doc:\/\/ExampleDocs\/documentation\/ExampleDocs\/ExampleArticle"
-      ]
-    }
-  ],
   "variants" : [
     {
       "paths" : [
-        "\/documentation\/exampledocs"
+        "\/documentation\/exampledocs\/examplearticle"
       ],
       "traits" : [
         {
@@ -94,20 +108,6 @@
   "title" : "ExampleDocs",
   "type" : "topic",
   "url" : "\/documentation\/exampledocs"
-},
-"doc://ExampleDocs/documentation/ExampleDocs/ExampleArticle": {
-  "abstract" : [
-    {
-      "text" : "An example article to display.",
-      "type" : "text"
-    }
-  ],
-  "identifier" : "doc:\/\/ExampleDocs\/documentation\/ExampleDocs\/ExampleArticle",
-  "kind" : "article",
-  "role" : "article",
-  "title" : "ExampleArticle",
-  "type" : "topic",
-  "url" : "\/documentation\/exampledocs\/examplearticle"
 }
 }
 }

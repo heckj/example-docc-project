@@ -24,13 +24,13 @@ The default structure is better for general usage - for example when you're prov
 To build and preview the documentation from the command line:
 
 ```bash
-swift package --disable-sandbox preview-documentation
+swift package --disable-sandbox preview-documentation --target ExampleDocs
 ```
 
 To build the documentation for distribution, use the `generate-documentation` command:
 
 ```bash
-swift package generate-documentation
+swift package generate-documentation --target ExampleDocs
 ```
 
 ### Options
@@ -56,6 +56,7 @@ This example project is set up to host the documentation on GitHub Pages, using 
 ```bash
 export DOCC_JSON_PRETTYPRINT=YES # makes the output JSON easier to read, and diff
 swift package --disable-sandbox generate-documentation \
+--target ExampleDocs \
 --hosting-base-path example-docc-project \
 --analyze --warnings-as-errors \
 --output-path docs
