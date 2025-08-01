@@ -23,7 +23,7 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4
-    - name: Test
+    - name: Build
       run: |
         swift build
  #       swift test --enable-code-coverage
