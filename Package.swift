@@ -1,4 +1,4 @@
-// swift-tools-version: 6.1
+// swift-tools-version: 5.10
 
 import PackageDescription
 
@@ -17,7 +17,7 @@ let package = Package(
             // The downside of this structure, especially with hosting other content alongside the DocC catalog,
             // is that SwiftPM complains about any rendered content, for example all the individual files
             // you might host for GitHub pages publishing.
-            exclude: ["README.md", "LICENSE", "img/github-pages-config.png"],
-        ),
+            exclude: ["README.md", "LICENSE", "img/github-pages-config.png"]
+        )
     ]
 )
