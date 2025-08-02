@@ -26,10 +26,17 @@ jobs:
     - name: Build
       run: |
         swift build
+
+  archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    container:
+      image: swift:6.1
+    steps:
     - name: Build Doc Archives
       run: swift package generate-documentation
     - name: store archives as build artifacts
-      uses: actions/upload-artifact@4
+      uses: actions/upload-artifact@v4
       with:
         name: docc-archives
         path: |
