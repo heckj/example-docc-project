@@ -26,6 +26,15 @@ jobs:
     - name: Build
       run: |
         swift build
+    - name: Build Doc Archives
+      run: swift package generate-documentation
+    - name: store archives as build artifacts
+      uses: actions/upload-artifact@4
+      with:
+        name: docc-archives
+        path: |
+          .build/plugins/Swift-DocC/outputs/
+
  #       swift test --enable-code-coverage
  #   - name: Convert coverage files
  #     run: |
