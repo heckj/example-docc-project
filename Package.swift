@@ -9,7 +9,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "ExampleDocs",
+            name: "ExampleDocs"
         ),
         .target(name: "SampleLibrary")
     ]
