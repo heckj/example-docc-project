@@ -37,9 +37,9 @@ jobs:
       uses: actions/checkout@v4
     - name: Build Doc Archives
       run: swift package generate-documentation
-    - name: store archives as build artifacts
-      uses: actions/upload-artifact@v4
-      with:
-        name: docc-archives
-        path: |
-          .build/plugins/Swift-DocC/outputs/
+    #- name: store archives as build artifacts
+    #  uses: actions/upload-artifact@v4
+    #  with:
+    #    name: docc-archives
+    #    path: |
+    #      .build/plugins/Swift-DocC/outputs/

@@ -1,20 +1,23 @@
 {
   "bundleID" : "ExampleDocs",
   "nonSymbolPaths" : {
-    "0" : "\/documentation\/ExampleDocs#Overview",
-    "1" : "\/documentation\/ExampleDocs#Topics",
-    "2" : "\/documentation\/ExampleDocs\/ExampleArticle#Section-header",
+    "0" : "\/documentation\/ExampleDocs\/ExampleArticle#Overview",
+    "1" : "\/documentation\/ExampleDocs#Overview",
+    "2" : "\/documentation\/ExampleDocs#Topics",
     "3" : "\/tutorials\/ExampleDocs",
-    "4" : "\/documentation\/ExampleDocs\/ExampleArticle",
     "5" : "\/tutorials",
-    "6" : "\/documentation\/ExampleDocs\/ExampleArticle#Overview"
+    "6" : "\/documentation\/ExampleDocs\/ExampleArticle",
+    "7" : "\/documentation\/ExampleDocs\/ExampleArticle#Section-header"
   },
   "pathHierarchy" : {
-    "articlesContainer" : 7,
+    "articlesContainer" : 4,
     "modules" : [
-      7
+      4
     ],
     "nodes" : [
+      {
+        "name" : "Overview"
+      },
       {
         "name" : "Overview"
       },
@@ -22,29 +25,31 @@
         "name" : "Topics"
       },
       {
-        "name" : "Section-header"
-      },
-      {
         "name" : "ExampleDocs"
       },
       {
         "children" : [
           {
-            "kind" : "anchor",
+            "kind" : "article",
             "nodeID" : 6
+          },
+          {
+            "kind" : "anchor",
+            "nodeID" : 1
           },
           {
             "kind" : "anchor",
             "nodeID" : 2
           }
         ],
-        "name" : "ExampleArticle"
+        "name" : "ExampleDocs",
+        "symbolID" : {
+          "interfaceLanguage" : "swift",
+          "precise" : "ExampleDocs"
+        }
       },
       {
         "name" : "tutorials"
-      },
-      {
-        "name" : "Overview"
       },
       {
         "children" : [
@@ -54,18 +59,13 @@
           },
           {
             "kind" : "anchor",
-            "nodeID" : 1
-          },
-          {
-            "kind" : "article",
-            "nodeID" : 4
+            "nodeID" : 7
           }
         ],
-        "name" : "ExampleDocs",
-        "symbolID" : {
-          "interfaceLanguage" : "swift",
-          "precise" : "ExampleDocs"
-        }
+        "name" : "ExampleArticle"
+      },
+      {
+        "name" : "Section-header"
       }
     ],
     "tutorialContainer" : 3,

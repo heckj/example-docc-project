@@ -2,22 +2,6 @@
   {
     "abstract" : [
       {
-        "text" : "An example article to display.",
-        "type" : "text"
-      }
-    ],
-    "availableLanguages" : [
-      "swift"
-    ],
-    "kind" : "org.swift.docc.kind.article",
-    "language" : "swift",
-    "path" : "\/documentation\/exampledocs\/examplearticle",
-    "referenceURL" : "doc:\/\/ExampleDocs\/documentation\/ExampleDocs\/ExampleArticle",
-    "title" : "ExampleArticle"
-  },
-  {
-    "abstract" : [
-      {
         "text" : "Summary for example docs",
         "type" : "text"
       }
@@ -31,5 +15,21 @@
     "referenceURL" : "doc:\/\/ExampleDocs\/documentation\/ExampleDocs",
     "title" : "ExampleDocs",
     "usr" : "ExampleDocs"
+  },
+  {
+    "abstract" : [
+      {
+        "text" : "An example article to display.",
+        "type" : "text"
+      }
+    ],
+    "availableLanguages" : [
+      "swift"
+    ],
+    "kind" : "org.swift.docc.kind.article",
+    "language" : "swift",
+    "path" : "\/documentation\/exampledocs\/examplearticle",
+    "referenceURL" : "doc:\/\/ExampleDocs\/documentation\/ExampleDocs\/ExampleArticle",
+    "title" : "ExampleArticle"
   }
 ]
