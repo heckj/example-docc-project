@@ -1,0 +1,79 @@
+{
+  "bundleID" : "ExampleDocs",
+  "nonSymbolPaths" : {
+    "0" : "\/documentation\/ExampleDocs\/ExampleArticle#Overview",
+    "1" : "\/documentation\/ExampleDocs#Overview",
+    "2" : "\/documentation\/ExampleDocs#Topics",
+    "3" : "\/tutorials\/ExampleDocs",
+    "5" : "\/tutorials",
+    "6" : "\/documentation\/ExampleDocs\/ExampleArticle",
+    "7" : "\/documentation\/ExampleDocs\/ExampleArticle#Section-header"
+  },
+  "pathHierarchy" : {
+    "articlesContainer" : 4,
+    "modules" : [
+      4
+    ],
+    "nodes" : [
+      {
+        "name" : "Overview"
+      },
+      {
+        "name" : "Overview"
+      },
+      {
+        "name" : "Topics"
+      },
+      {
+        "name" : "ExampleDocs"
+      },
+      {
+        "children" : [
+          {
+            "kind" : "article",
+            "nodeID" : 6
+          },
+          {
+            "kind" : "anchor",
+            "nodeID" : 1
+          },
+          {
+            "kind" : "anchor",
+            "nodeID" : 2
+          }
+        ],
+        "name" : "ExampleDocs",
+        "symbolID" : {
+          "interfaceLanguage" : "swift",
+          "precise" : "ExampleDocs"
+        }
+      },
+      {
+        "name" : "tutorials"
+      },
+      {
+        "children" : [
+          {
+            "kind" : "anchor",
+            "nodeID" : 0
+          },
+          {
+            "kind" : "anchor",
+            "nodeID" : 7
+          }
+        ],
+        "name" : "ExampleArticle"
+      },
+      {
+        "name" : "Section-header"
+      }
+    ],
+    "tutorialContainer" : 3,
+    "tutorialOverviewContainer" : 5
+  },
+  "version" : {
+    "major" : 0,
+    "minor" : 1,
+    "patch" : 0
+  }
+}
