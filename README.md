@@ -9,12 +9,6 @@ You can edit and build the documentation content using Xcode, or from the comman
 
 ## Package Structure
 
-This repository is structured to put the Documentation catalog at the root of the repository, which comes with some tradeoffs.
-The `Package.swift` file is set up with a target that looks for sources in this directory, which means
-that the swift compiler warns about files it doesn't know about.
-A couple of files (`LICENSE` and `README.md`) are explicitly excluded in the [package manifest](./Package.swift), but the `/docs` directory and its files - aren't included in that set.
-The side effect of this is that everything builds normally, but you'll see warnings from the Swift compiler when invoking the documentation preview or builds.
-
 The default structure for a Swift package would place the documentation catalog (the directory `Documentation.docc`) in the sources location based on the target.
 In this example, that target is named `ExampleDocs` - so the default location is `Sources/ExampleDocs`.
 The default structure is better for general usage - for example when you're provided API reference for a library or executable, or want to provide more than one catalog within the same repository.
@@ -27,11 +21,17 @@ To build and preview the documentation from the command line:
 swift package --disable-sandbox preview-documentation --target ExampleDocs
 ```
 
+With the preview running, this projects content is available at: [http://localhost:8080/documentation/exampledocs](http://localhost:8080/documentation/exampledocs).
+
 To build the documentation for distribution, use the `generate-documentation` command:
 
 ```bash
-swift package generate-documentation --target ExampleDocs
+swift package generate-documentation --target ExampleDocs 
 ```
+
+The default location for the generated DocC archive is in the `.build/plugins/Swift-DocC/outputs/` directory, in this case:
+
+- `.build/plugins/Swift-DocC/outputs/ExampleDocs.doccarchiv`
 
 ### Options
 
@@ -49,8 +49,10 @@ swift package generate-documentation --target ExampleDocs
 
 ## Publishing Documentation
 
-Add your package to [Swift Package Index](https://swiftpackageindex.com) to host the documentation and make it discoverable.
-You can also build the documentation and host it on GitHub Pages or any other static hosting service.
+One option is to add your package to [Swift Package Index](https://swiftpackageindex.com) to host the documentation and make it discoverable.
+To do so, create an .spi.yml file in your repository, and add your repository to the index. See [Host DocC documentation in the Swift Package Index](https://swiftpackageindex.com/swiftpackageindex/spimanifest/~/documentation/spimanifest/commonusecases#Host-DocC-documentation-in-the-Swift-Package-Index) for details on that process.
+
+You can also build the documentation and host it on GitHub Pages (or any other static hosting service).
 This example project is set up to host the documentation on GitHub Pages, using the following command:
 
 ```bash
