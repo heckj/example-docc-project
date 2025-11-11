@@ -1,0 +1,56 @@
+{
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/example-docc-project\/documentation"
+  },
+  "kind" : "article",
+  "metadata" : {
+    "role" : "collection",
+    "roleHeading" : "Package",
+    "title" : "example-docc-project"
+  },
+  "references" : {
+    "doc:\/\/ExampleDocs\/documentation\/ExampleDocs" : {
+      "abstract" : [
+        {
+          "text" : "Summary for example docs",
+          "type" : "text"
+        }
+      ],
+      "identifier" : "doc:\/\/ExampleDocs\/documentation\/ExampleDocs",
+      "kind" : "symbol",
+      "role" : "collection",
+      "title" : "ExampleDocs",
+      "type" : "topic",
+      "url" : "\/documentation\/exampledocs"
+    },
+    "doc:\/\/SampleLibrary\/documentation\/SampleLibrary" : {
+      "abstract" : [
+
+      ],
+      "identifier" : "doc:\/\/SampleLibrary\/documentation\/SampleLibrary",
+      "kind" : "symbol",
+      "role" : "collection",
+      "title" : "SampleLibrary",
+      "type" : "topic",
+      "url" : "\/documentation\/samplelibrary"
+    }
+  },
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/ExampleDocs\/documentation\/ExampleDocs",
+        "doc:\/\/SampleLibrary\/documentation\/SampleLibrary"
+      ]
+    }
+  ],
+  "topicSectionsStyle" : "detailedGrid"
+}

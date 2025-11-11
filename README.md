@@ -33,6 +33,12 @@ The default location for the generated DocC archive is in the `.build/plugins/Sw
 
 - `.build/plugins/Swift-DocC/outputs/ExampleDocs.doccarchiv`
 
+If you exclude the `--target` option, the command builds all of the targets available in the package:
+
+  - `.build/plugins/Swift-DocC/outputs/ExampleDocs.doccarchive`
+  - `.build/plugins/Swift-DocC/outputs/SampleLibrary.doccarchive`
+  - `.build/plugins/Swift-DocC/outputs/example-snippet.doccarchive`
+
 ### Options
 
 - Use `--hosting-base-path` to specify the base path where you host the content. 
@@ -62,6 +68,19 @@ swift package --disable-sandbox generate-documentation \
 --hosting-base-path example-docc-project \
 --analyze --warnings-as-errors \
 --output-path docs
+```
+
+A more expansive option publishes multiple targets together as a combined set of documentation:
+```bash
+export DOCC_JSON_PRETTYPRINT=YES # makes the output JSON easier to read, and diff
+swift package --disable-sandbox generate-documentation \
+  --enable-experimental-combined-documentation \
+  --enable-mentioned-in \
+  --enable-experimental-external-link-support \
+  --target ExampleDocs \
+  --target SampleLibrary \
+  --hosting-base-path example-docc-project \
+  --output-path docs
 ```
 
 The GitHub pages configuration:
