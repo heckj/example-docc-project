@@ -32,3 +32,10 @@ Package.resolved
 .build/
 .docc-build/
 .DS_Store
+
+# Playwright
+node_modules
+# Testing output to ignore
+docs-build/
+playwright-report/
+test-results/

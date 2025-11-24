@@ -11,7 +11,7 @@ You can edit and build the documentation content using Xcode, or from the comman
 
 The default structure for a Swift package places the documentation catalog (the directory `Documentation.docc`) in the sources location for a target.
 In this example, that target is named `ExampleDocs` - so the default location is `Sources/ExampleDocs`.
-The default structure is intended to be keep the documentatin close to the source code it documents, and allows for the use of Snippets, which lets you reference the source from code sames that the package compiles, into your content.
+The default structure is intended to be keep the documentatin close to the source code it documents, and allows for the use of Snippets, which lets you reference the source from code samples that the package compiles, into your content.
 
 ## Building Documentation
 
@@ -89,5 +89,27 @@ The GitHub pages configuration:
 
 The resulting pages are hosted at [heckj.github.io/example-docc-project](https://heckj.github.io/example-docc-project).
 
-> ⚠️ Warning: DocC doesn't currently generate a link from the base directory to its content, so accessing the above URL 
 > results in "Page not found", even though the content IS hosted. Link to the content directly, in this case: [https://heckj.github.io/example-docc-project/documentation/exampledocs/](https://heckj.github.io/example-docc-project/documentation/exampledocs/).
+
+## Integration Tests
+
+This project uses [Playwright](https://playwright.dev) for integration testing to verify the documentation content.
+
+To run the tests:
+
+1.  Install dependencies:
+    ```bash
+    npm install
+    ```
+
+2.  Install Playwright browsers:
+    ```bash
+    npx playwright install
+    ```
+
+3.  Run the tests:
+    ```bash
+    npx playwright test
+    ```
+
+The tests build the content from this repository into a temporary directory, serve it locally, and verify the content.
