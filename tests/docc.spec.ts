@@ -1,8 +1,8 @@
 import { test, expect } from '@playwright/test';
 
-test('has title', async ({ page }) => {
-    await page.goto('/documentation/exampledocs');
+test('Base directory has combined content', async ({ page }) => {
+    await page.goto('/documentation');
 
     // Expect a title "to contain" a substring.
-    await expect(page).toHaveTitle(/ExampleDocs/);
+    await expect(page).toHaveTitle(/example-docc-project/);
 });
