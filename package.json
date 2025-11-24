@@ -23,6 +23,7 @@
   "homepage": "https://github.com/heckj/example-docc-project#readme",
   "devDependencies": {
     "@playwright/test": "^1.56.1",
+    "@types/node": "^24.10.1",
     "http-server": "^14.1.1"
   }
 }
