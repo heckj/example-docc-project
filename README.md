@@ -9,9 +9,9 @@ You can edit and build the documentation content using Xcode, or from the comman
 
 ## Package Structure
 
-The default structure for a Swift package would place the documentation catalog (the directory `Documentation.docc`) in the sources location based on the target.
+The default structure for a Swift package places the documentation catalog (the directory `Documentation.docc`) in the sources location for a target.
 In this example, that target is named `ExampleDocs` - so the default location is `Sources/ExampleDocs`.
-The default structure is better for general usage - for example when you're provided API reference for a library or executable, or want to provide more than one catalog within the same repository.
+The default structure is intended to be keep the documentatin close to the source code it documents, and allows for the use of Snippets, which lets you reference the source from code sames that the package compiles, into your content.
 
 ## Building Documentation
 
