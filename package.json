@@ -1,0 +1,28 @@
+{
+  "name": "example-docc-project",
+  "version": "1.0.0",
+  "description": "An example Swift package set up for hosting documentation.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heckj/example-docc-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/heckj/example-docc-project/issues"
+  },
+  "homepage": "https://github.com/heckj/example-docc-project#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "http-server": "^14.1.1"
+  }
+}
