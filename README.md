@@ -72,14 +72,18 @@ swift package --disable-sandbox generate-documentation \
 
 A more expansive option publishes multiple targets together as a combined set of documentation:
 ```bash
-export DOCC_JSON_PRETTYPRINT=YES # makes the output JSON easier to read, and diff
+export DOCC_JSON_PRETTYPRINT=YES 
+# ^ makes the output JSON easier to read, and diff more cleanly
 swift package --disable-sandbox generate-documentation \
-  --enable-experimental-combined-documentation \
   --enable-mentioned-in \
+  --enable-inherited-docs \
+  --enable-experimental-combined-documentation \
   --enable-experimental-external-link-support \
+  --enable-experimental-overloaded-symbol-presentation \
   --target ExampleDocs \
   --target SampleLibrary \
   --hosting-base-path example-docc-project \
+  --emit-digest \
   --output-path docs
 ```
 

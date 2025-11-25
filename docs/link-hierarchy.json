@@ -1,45 +1,36 @@
 {
   "bundleID" : "ExampleDocs",
   "nonSymbolPaths" : {
-    "0" : "\/documentation\/ExampleDocs\/ExampleArticle#Overview",
-    "1" : "\/documentation\/ExampleDocs#Overview",
-    "2" : "\/documentation\/ExampleDocs#Topics",
-    "3" : "\/tutorials\/ExampleDocs",
-    "5" : "\/tutorials",
-    "6" : "\/documentation\/ExampleDocs\/ExampleArticle",
-    "7" : "\/documentation\/ExampleDocs\/ExampleArticle#Section-header"
+    "0" : "\/tutorials",
+    "2" : "\/documentation\/ExampleDocs#Overview",
+    "3" : "\/documentation\/ExampleDocs\/ExampleArticle#Overview",
+    "4" : "\/tutorials\/ExampleDocs",
+    "5" : "\/documentation\/ExampleDocs\/ExampleArticle",
+    "6" : "\/documentation\/ExampleDocs\/ExampleArticle#Section-header",
+    "7" : "\/documentation\/ExampleDocs#Topics"
   },
   "pathHierarchy" : {
-    "articlesContainer" : 4,
+    "articlesContainer" : 1,
     "modules" : [
-      4
+      1
     ],
     "nodes" : [
       {
-        "name" : "Overview"
-      },
-      {
-        "name" : "Overview"
-      },
-      {
-        "name" : "Topics"
-      },
-      {
-        "name" : "ExampleDocs"
+        "name" : "tutorials"
       },
       {
         "children" : [
           {
-            "kind" : "article",
-            "nodeID" : 6
-          },
-          {
-            "kind" : "anchor",
-            "nodeID" : 1
-          },
-          {
             "kind" : "anchor",
             "nodeID" : 2
+          },
+          {
+            "kind" : "anchor",
+            "nodeID" : 7
+          },
+          {
+            "kind" : "article",
+            "nodeID" : 5
           }
         ],
         "name" : "ExampleDocs",
@@ -49,27 +40,36 @@
         }
       },
       {
-        "name" : "tutorials"
+        "name" : "Overview"
+      },
+      {
+        "name" : "Overview"
+      },
+      {
+        "name" : "ExampleDocs"
       },
       {
         "children" : [
           {
             "kind" : "anchor",
-            "nodeID" : 0
+            "nodeID" : 6
           },
           {
             "kind" : "anchor",
-            "nodeID" : 7
+            "nodeID" : 3
           }
         ],
         "name" : "ExampleArticle"
       },
       {
         "name" : "Section-header"
+      },
+      {
+        "name" : "Topics"
       }
     ],
-    "tutorialContainer" : 3,
-    "tutorialOverviewContainer" : 5
+    "tutorialContainer" : 4,
+    "tutorialOverviewContainer" : 0
   },
   "version" : {
     "major" : 0,

@@ -98,7 +98,10 @@
 },
 "doc://SampleLibrary/documentation/SampleLibrary/SampleError/localizedDescription": {
   "abstract" : [
-
+    {
+      "text" : "Retrieve the localized description for this error.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
