@@ -1,0 +1,16 @@
+@Tutorials(name: "Example Tutorial") {
+    @Intro(title: "introduction") {
+        A step-by-step tutorial to learn something neat with Swift.
+        
+        @Image(source: developer-at-laptop, alt: "developer working at a laptop")
+    }
+    
+    @Chapter(name: "learning something") {
+        This chapter helps you learn something.
+        
+        @Image(source: developer-thinking, alt: "developer thinking")
+        
+        @TutorialReference(tutorial: "doc:01-overview")
+        @TutorialReference(tutorial: "doc:02-example")
+    }
+}
